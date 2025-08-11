@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.3)  10 AUG 2025 22:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.3)  11 AUG 2025 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1684,14 +1684,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 2.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 42.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 42.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 42.
@@ -1866,42 +1865,43 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 42.
+ (./main.out)
+(./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c@lstlisting=\count400
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 98
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+5.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+05.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+05.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 9
-8.
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
+05.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
@@ -1909,119 +1909,132 @@ File: ts1txr.fd 2000/12/15 v3.1
 f-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
-Underfull \hbox (badness 2409) in paragraph at lines 202--205
-[]\OT1/txr/m/n/10 India's north-ward drift from Gond-wana-land is be-lieved to 
-have started ap-prox-i-mately (in mil-lion years ago,Ma)
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
  []
 
 [2]
-<figs/Screenshot from 2025-08-05 22-06-18.png, id=161, 461.725pt x 197.73875pt>
+<figs/Screenshot from 2025-08-05 22-06-18.png, id=143, 461.725pt x 197.73875pt>
 
 File: figs/Screenshot from 2025-08-05 22-06-18.png Graphic file (type png)
 <use figs/Screenshot from 2025-08-05 22-06-18.png>
 Package pdftex.def Info: figs/Screenshot from 2025-08-05 22-06-18.png  used on 
-input line 322.
+input line 376.
 (pdftex.def)             Requested size: 270.3012pt x 115.75967pt.
  [3 <./figs/Screenshot from 2025-08-05 22-06-18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 432--435
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--452
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--463
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--473
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--482
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 498--501
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--510
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--519
+Underfull \hbox (badness 10000) in paragraph at lines 519--526
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--528
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--537
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 555--558
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
-<figs/Screenshot from 2025-08-06 21-22-28.png, id=253, 639.38875pt x 423.5825pt
+
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--605
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 626--627
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+<figs/Screenshot from 2025-08-06 21-22-28.png, id=275, 639.38875pt x 423.5825pt
 >
 File: figs/Screenshot from 2025-08-06 21-22-28.png Graphic file (type png)
 <use figs/Screenshot from 2025-08-06 21-22-28.png>
 Package pdftex.def Info: figs/Screenshot from 2025-08-06 21-22-28.png  used on 
-input line 572.
+input line 670.
 (pdftex.def)             Requested size: 270.3012pt x 179.06683pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-[6 <./figs/Screenshot from 2025-08-06 21-22-28.png>]
-Underfull \hbox (badness 2790) in paragraph at lines 707--710
-[]\OT1/txr/m/n/10 In elec-tri-cal re-sis-tiv-ity method, which among the fol-lo
-w-ing is cor-rect with ref-er-ence to Ge-o-met-ric Fac-tor(GF)?
- []
-
-[7]
-<figs/Screenshot from 2025-08-07 18-03-55.png, id=399, 529.98pt x 154.5775pt>
+[6 <./figs/Screenshot from 2025-08-06 21-22-28.png>] [7] [8]
+<figs/Screenshot from 2025-08-07 18-03-55.png, id=407, 529.98pt x 154.5775pt>
 File: figs/Screenshot from 2025-08-07 18-03-55.png Graphic file (type png)
 <use figs/Screenshot from 2025-08-07 18-03-55.png>
 Package pdftex.def Info: figs/Screenshot from 2025-08-07 18-03-55.png  used on 
-input line 790.
+input line 929.
 (pdftex.def)             Requested size: 270.3012pt x 78.83818pt.
- [8 <./figs/Screenshot from 2025-08-07 18-03-55.png>]
-<figs/Screenshot from 2025-08-08 12-25-34.png, id=455, 687.56876pt x 250.9375pt
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--965
+
+ []
+
+[9 <./figs/Screenshot from 2025-08-07 18-03-55.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1032
+
+ []
+
+<figs/Screenshot from 2025-08-08 12-25-34.png, id=457, 687.56876pt x 250.9375pt
 >
 File: figs/Screenshot from 2025-08-08 12-25-34.png Graphic file (type png)
 <use figs/Screenshot from 2025-08-08 12-25-34.png>
 Package pdftex.def Info: figs/Screenshot from 2025-08-08 12-25-34.png  used on 
-input line 908.
+input line 1066.
 (pdftex.def)             Requested size: 270.3012pt x 98.65016pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./figs/Screenshot from 2025-08-08 12-25-34.png>]
+ [10 <./figs/Screenshot from 2025-08-08 12-25-34.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-[11] (./main.aux)
+ [11]
+[12] [13] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -2030,20 +2043,14 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 53575 strings out of 474222
- 1263361 string characters out of 5748734
- 1952975 words of memory out of 5000000
- 74525 multiletter control sequences out of 15000+600000
+ 53585 strings out of 474222
+ 1263471 string characters out of 5748734
+ 1948975 words of memory out of 5000000
+ 74527 multiletter control sequences out of 15000+600000
  626293 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,7n,109p,1194b,1162s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2054,10 +2061,10 @@ nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (11 pages, 174989 bytes).
+Output written on main.pdf (13 pages, 175182 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 656 compressed objects within 7 object streams
- 491 named destinations out of 1000 (max. 500000)
+ 726 PDF objects out of 1000 (max. 8388607)
+ 664 compressed objects within 7 object streams
+ 493 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
