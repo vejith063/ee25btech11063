@@ -1,0 +1,113 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a4paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{5.2.65}
+\author{ee25btech11063-vejith}
+
+\maketitle
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\textbf{Question}\\
+Solve\\
+$\Vec{X}$+$\Vec{Y}$=$\begin{pmatrix}
+    5 & 2\\
+    0 & 9
+\end{pmatrix}$ and $\Vec{X}$-$\Vec{Y}$=$\begin{pmatrix}
+    3 & 6\\
+    0 & -1
+\end{pmatrix}$\\
+\textbf{Solution}:\\
+Given,
+\begin{align}
+    \Vec{X}+\Vec{Y}=\begin{pmatrix}
+    5 & 2\\
+    0 & 9
+    \end{pmatrix}
+\end{align}
+\begin{align}
+    \Vec{X}-\Vec{Y}=\begin{pmatrix}
+    3 & 6\\
+    0 & -1
+\end{pmatrix}
+\end{align}
+Add equation (1) and (2)
+\begin{align}
+     2\Vec{X}=\begin{pmatrix}
+    8 & 8\\
+    0 & 8
+\end{pmatrix}\\
+\implies \Vec{X}=\begin{pmatrix}
+    4 & 4\\
+    0 & 4
+\end{pmatrix}
+\end{align}
+Subtract equation (1) and (2)
+\begin{align}
+    2\Vec{Y}=\begin{pmatrix}
+    2 & -4\\
+    0 & 10
+\end{pmatrix}\\
+\implies \Vec{Y}=\begin{pmatrix}
+    1 & -2\\
+    0 & 5
+\end{pmatrix}
+\end{align}
+\begin{align}
+    \implies \Vec{X}=\begin{pmatrix}
+    4 & 4\\
+    0 & 4
+\end{pmatrix} \text{ and } \Vec{Y}=\begin{pmatrix}
+    1 & -2\\
+    0 & 5
+\end{pmatrix}
+\end{align}
+\end{document}
