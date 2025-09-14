@@ -98,22 +98,34 @@ Given,
     \implies \begin{pmatrix}
         1 & 1\\
          1 & -1
-    \end{pmatrix} \myvec{\vec{X}\\\vec{Y}}=\myvec{\begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix}\\\begin{pmatrix} 3 & 6 \\ 0 & -1 \end{pmatrix}}
+    \end{pmatrix} \myvec{\vec{X}\\\vec{Y}}=\myvec{\vec{A}\\ \vec{B}}\\
+     \vec{A}= \begin{pmatrix}
+    5 & 2\\
+    0 & 9
+\end{pmatrix} \text{ and } \vec{B}=\begin{pmatrix}
+    3 & 6\\
+    0 & -1
+\end{pmatrix}
     \end{align}
 Forming the Augmented matrix
 \begin{align}
 \left(\begin{array}{cc|c}
-1 & 1 & \begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix} \\
-1 & -1 & \begin{pmatrix} 3 & 6 \\ 0 & -1 \end{pmatrix}
+1 & 1 & \vec{A}\\
+1 & -1 & \vec{B}
 \end{array}\right)  &\xrightarrow{R_2 \rightarrow R_2-R_1} \left(\begin{array}{cc|c}
-1 & 1 & \begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix} \\
-0 & -2 & \begin{pmatrix} -2 & 4 \\ 0 & -10 \end{pmatrix}
-\end{array}\right)
+1 & 1 & \vec{A}\\
+0 & -2 & \vec{B-A}
+\end{array}\right)\\
+\implies -2\Vec{Y}=\vec{B-A}
 \end{align}
 \end{frame}
+
 \begin{frame}{Solution}
-\begin{align}
-\implies -2\Vec{Y}=\begin{pmatrix} -2 & 4 \\ 0 & -10 \end{pmatrix}\\
+    \begin{align}
+\vec{B-A}= \begin{pmatrix}
+    -2 & 4\\
+    0 & -10
+\end{pmatrix}\\
 \implies \Vec{Y}=\begin{pmatrix} 1 & -2 \\ 0 & 5 \end{pmatrix}\\
 \implies \Vec{X}+\Vec{Y}=\begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix}\\
 \implies \Vec{X}=\begin{pmatrix} 4 & 4 \\ 0 & 4 \end{pmatrix}
@@ -128,8 +140,8 @@ on back substitution we get
     0 & 5
 \end{pmatrix}
 \end{align}
-
 \end{frame}
+
 % --------- CODE APPENDIX ---------
 \section*{Appendix: Code}
 
