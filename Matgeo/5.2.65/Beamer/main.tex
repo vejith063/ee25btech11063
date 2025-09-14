@@ -81,7 +81,8 @@ $\Vec{X}$+$\Vec{Y}$=$\begin{pmatrix}
 \end{frame}
 
 \begin{frame}{Solution}
-    \begin{align}
+Given,
+\begin{align}
     \Vec{X}+\Vec{Y}=\begin{pmatrix}
     5 & 2\\
     0 & 9
@@ -93,31 +94,32 @@ $\Vec{X}$+$\Vec{Y}$=$\begin{pmatrix}
     0 & -1
 \end{pmatrix}
 \end{align}
-Add equation (0.1) and (0.2)
 \begin{align}
-     2\Vec{X}=\begin{pmatrix}
-    8 & 8\\
-    0 & 8
-\end{pmatrix}\\
-\implies \Vec{X}=\begin{pmatrix}
-    4 & 4\\
-    0 & 4
-\end{pmatrix}
-\end{align}
-Subtract equation (0.1) and (0.2)
+    \implies \begin{pmatrix}
+        1 & 1\\
+         1 & -1
+    \end{pmatrix} \myvec{\vec{X}\\\vec{Y}}=\myvec{\begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix}\\\begin{pmatrix} 3 & 6 \\ 0 & -1 \end{pmatrix}}
+    \end{align}
+Forming the Augmented matrix
 \begin{align}
-    2\Vec{Y}=\begin{pmatrix}
-    2 & -4\\
-    0 & 10
-\end{pmatrix}\\
+\left(\begin{array}{cc|c}
+1 & 1 & \begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix} \\
+1 & -1 & \begin{pmatrix} 3 & 6 \\ 0 & -1 \end{pmatrix}
+\end{array}\right)  &\xrightarrow{R_2 \rightarrow R_2-R_1} \left(\begin{array}{cc|c}
+1 & 1 & \begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix} \\
+0 & -2 & \begin{pmatrix} -2 & 4 \\ 0 & -10 \end{pmatrix}
+\end{array}\right)
 \end{align}
 \end{frame}
-\begin{frame}{Conclusion}
+\begin{frame}{Solution}
+\begin{align}
+\implies -2\Vec{Y}=\begin{pmatrix} -2 & 4 \\ 0 & -10 \end{pmatrix}\\
+\implies \Vec{Y}=\begin{pmatrix} 1 & -2 \\ 0 & 5 \end{pmatrix}\\
+\implies \Vec{X}+\Vec{Y}=\begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix}\\
+\implies \Vec{X}=\begin{pmatrix} 4 & 4 \\ 0 & 4 \end{pmatrix}
+\end{align}
+on back substitution we get
     \begin{align}
-    \implies \Vec{Y}=\begin{pmatrix}
-    1 & -2\\
-    0 & 5
-\end{pmatrix}\\
     \implies \Vec{X}=\begin{pmatrix}
     4 & 4\\
     0 & 4
