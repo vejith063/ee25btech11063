@@ -83,7 +83,7 @@ Given,
     \implies \begin{pmatrix}
         1 & 1\\
          1 & -1
-    \end{pmatrix} \myvec{\vec{X}\\\vec{Y}}=\myvec{\vec{A}\\ \vec{B}}\\
+    \end{pmatrix} \brak{\vec{X}\hspace{0.5cm}\vec{Y}}=\brak{\vec{A}\hspace{0.5cm}\vec{B}}\\
      \vec{A}= \begin{pmatrix}
     5 & 2\\
     0 & 9
@@ -94,13 +94,16 @@ Given,
     \end{align}
 Forming the Augmented matrix
 \begin{align}
-\left(\begin{array}{cc|c}
-1 & 1 & \vec{A}\\
-1 & -1 & \vec{B}
-\end{array}\right)  &\xrightarrow{R_2 \rightarrow R_2-R_1} \left(\begin{array}{cc|c}
-1 & 1 & \vec{A}\\
-0 & -2 & \vec{B-A}
-\end{array}\right)\\
+\left(
+\begin{array}{cc|c}
+1 & 1 & \vec{A} \;\; \vec{B} \\
+1 & -1 &
+\end{array}
+\right)  &\xrightarrow{R_2 \rightarrow R_2-R_1} \left(
+\begin{array}{cc|c}
+1 & 1 & \vec{A} \;\; \vec{B-A} \\
+0 & -2 &
+\end{array} \right)\\ 
 \implies -2\Vec{Y}=\vec{B-A}\\
 \vec{B-A}= \begin{pmatrix}
     -2 & 4\\
@@ -115,4 +118,6 @@ on back substitution we get
     \implies \Vec{X}=\begin{pmatrix} 4 & 4 \\ 0 & 4 \end{pmatrix} \text{ and }
     \Vec{Y}=\begin{pmatrix} 1 & -2 \\ 0 & 5 \end{pmatrix}
 \end{align}
+
+
 \end{document}
