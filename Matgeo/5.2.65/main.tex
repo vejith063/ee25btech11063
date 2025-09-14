@@ -92,32 +92,28 @@ Given,
     0 & -1
 \end{pmatrix}
     \end{align}
-Forming the Augmented matrix
+Multiply both sides with traspose of coefficent matrix
 \begin{align}
-\left(
-\begin{array}{cc|c}
-1 & 1 & \vec{A} \;\; \vec{B} \\
-1 & -1 &
-\end{array}
-\right)  &\xrightarrow{R_2 \rightarrow R_2-R_1} \left(
-\begin{array}{cc|c}
-1 & 1 & \vec{A} \;\; \vec{B-A} \\
-0 & -2 &
-\end{array} \right)\\ 
-\implies -2\Vec{Y}=\vec{B-A}\\
-\vec{B-A}= \begin{pmatrix}
-    -2 & 4\\
-    0 & -10
-\end{pmatrix}\\
-\implies \Vec{Y}=\begin{pmatrix} 1 & -2 \\ 0 & 5 \end{pmatrix}\\
-\implies \Vec{X}+\Vec{Y}=\begin{pmatrix} 5 & 2 \\ 0 & 9 \end{pmatrix}\\
-\implies \Vec{X}=\begin{pmatrix} 4 & 4 \\ 0 & 4 \end{pmatrix}
-\end{align}
-on back substitution we get
-\begin{align}
-    \implies \Vec{X}=\begin{pmatrix} 4 & 4 \\ 0 & 4 \end{pmatrix} \text{ and }
-    \Vec{Y}=\begin{pmatrix} 1 & -2 \\ 0 & 5 \end{pmatrix}
-\end{align}
-
-
+    \implies \begin{pmatrix}
+        1 & 1\\
+         1 & -1
+    \end{pmatrix} \begin{pmatrix}
+        1 & 1\\
+         1 & -1
+    \end{pmatrix} \brak{\vec{X}\hspace{0.5cm}\vec{Y}}=\begin{pmatrix}
+        1 & 1\\
+         1 & -1
+    \end{pmatrix} \brak{\vec{A}\hspace{0.5cm}\vec{B}}\\
+    \implies \begin{pmatrix}
+        2 & 0\\
+         0 & 2
+    \end{pmatrix} \brak{\vec{X}\hspace{0.5cm}\vec{Y}}= \brak{\vec{A+B}\hspace{0.5cm}\vec{A-B}}\\
+    \implies \vec{X}=\frac{\vec{A+B}}{2} \text{ and } \vec{Y}=\frac{\vec{A-B}}{2}\\ \implies \vec{X}=\begin{pmatrix}
+        4 & 4\\
+         0 & 4
+    \end{pmatrix} \text{ and } \vec{Y}=\begin{pmatrix}
+        1 & -2\\
+         0 & 5
+    \end{pmatrix}
+    \end{align}
 \end{document}
