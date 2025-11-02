@@ -30,7 +30,25 @@ where:
 * Σ ∈ ℝ^(r×r)  (diagonal matrix with singular values σ₁ ≥ σ₂ ≥ ⋯ ≥ σᵣ > 0),
 * V ∈ ℝ^(n×r)  (right singular vectors with unit norm ), where  r = rank(A).
 
-goal is to reconstruct the matrix A by taking top k eigen values i.e A = UₖΣₖVₖᵀ
+goal is to reconstruct the matrix A by taking top k eigen values i.e Aₖ = UₖΣₖVₖᵀ
+* Generate a gaussian random matrix:
+
+let Ω be the random matrix generated i.e U ∈ ℝ^(n×k) whose entries are independently and choosen and Ωij​ ∼ N(0,1) this means that the average of all the entries of the random matrix is 0 and it also says that the variance of all the entries of the random matrix is 1
+* Form a matrix Y such that Y = AΩ
+* perform QR decomposition on Y to compute the Orthonormal  basis of Y
+
+let Q = orthonormal basis of Y and Q ∈ R^(m×k) and QᵀQ = Iₖ and A ≈ QQᵀA
+* compute a smaller matrix B 
+
+B = QᵀA and B ∈ R^(k×n)
+* Now compute SVD on B as B is a much smaller matrix it is easy to compute SVD on B 
+
+                   B = ŨΣVᵀ             
+the right unit norm vectors V are same for B and U and Ũ are the eigen vectors of the matrix B so 
+U = QŨ
+
+
+
 
 
 
