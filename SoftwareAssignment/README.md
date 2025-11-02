@@ -46,8 +46,7 @@ B = QᵀA and B ∈ R^(k×n)
 * Now compute SVD on B as B is a much smaller matrix it is easy to compute SVD on B 
 
                    B = ŨΣVᵀ             
-the right unit norm vectors V are same for B and U and Ũ are the eigen vectors of the matrix B so 
-U = QŨ
+the right unit norm vectors V are same for B and U and Ũ are the eigen vectors of the matrix B 
 
 
 
