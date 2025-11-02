@@ -21,15 +21,18 @@ To perform truncated svd for large matrices like intensity matrices the best met
 # Randomized SVD with Gaussian Random Matrix
 Mathematical background:
 
-Given a real matrix A ∈ ℝ^(m×n), the Singular Value Decomposition (SVD) is:
+For a real matrix A ∈ ℝ^(m×n), the Singular Value Decomposition (SVD) is:
 
 A = UΣVᵀ
 
 where:
-* U ∈ ℝ^(m×r)  (orthonormal left singular vectors),
-* Σ ∈ ℝ^(r×r)  (diagonal matrix of singular values σ₁ ≥ σ₂ ≥ ⋯ ≥ σᵣ > 0),
-* V ∈ ℝ^(n×r)  (orthonormal right singular vectors),
-* r = rank(A).
+* U ∈ ℝ^(m×r)  (left singular vectors with unit norm),
+* Σ ∈ ℝ^(r×r)  (diagonal matrix with singular values σ₁ ≥ σ₂ ≥ ⋯ ≥ σᵣ > 0),
+* V ∈ ℝ^(n×r)  (right singular vectors with unit norm ), where  r = rank(A).
+
+goal is to reconstruct the matrix A by taking top k eigen values i.e A = UₖΣₖVₖᵀ
+
+
 
 
 
