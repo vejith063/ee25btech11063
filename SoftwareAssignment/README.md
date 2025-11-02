@@ -34,10 +34,12 @@ goal is to reconstruct the matrix A by taking top k eigen values i.e Aₖ = Uₖ
 * Generate a gaussian random matrix:
 
 let Ω be the random matrix generated i.e U ∈ ℝ^(n×k) whose entries are independently and choosen and Ωij​ ∼ N(0,1) this means that the average of all the entries of the random matrix is 0 and it also says that the variance of all the entries of the random matrix is 1
-* Form a matrix Y such that Y = AΩ
+* Form a matrix Y such that 
+                   Y = AΩ
 * perform QR decomposition on Y to compute the Orthonormal  basis of Y
 
-let Q = orthonormal basis of Y and Q ∈ R^(m×k) and QᵀQ = Iₖ and A ≈ QQᵀA
+let 
+        Q = orthonormal basis of Y and Q ∈ R^(m×k) and QᵀQ = Iₖ and A ≈ QQᵀA
 * compute a smaller matrix B 
 
 B = QᵀA and B ∈ R^(k×n)
