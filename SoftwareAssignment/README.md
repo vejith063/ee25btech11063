@@ -12,6 +12,7 @@ unsigned char *stbi_load(char *filename,int *x, int *y, int *channels_in_file,in
 * desired_channels it is an integer value which is = 1 for greyscale image, = 3 for RGB, = 4 for RGBA.
 
 It writes the entries to a file named matrix.txt which stores the desired data 
-
+# c code for truncated SVD
+The goal of this project is to perform svd on the intensity matrix and to reconstruct AK the image by taking the top k  eigen values and we have to calculate the ∥A − Ak ∥F where ∥ · ∥F is the Frobenius norm and the difference in the properties of image such as quality,etc.
 
 
