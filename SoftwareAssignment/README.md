@@ -39,10 +39,10 @@ let Ω be the random matrix generated i.e U ∈ ℝ^(n×k) whose entries are ind
 * perform QR decomposition on Y to compute the Orthonormal  basis of Y
 
 let 
-        Q = orthonormal basis of Y and Q ∈ R^(m×k) and QᵀQ = Iₖ and A ≈ QQᵀA
+        Q = orthonormal basis of Y and Q ∈ ℝ^(m×k) and QᵀQ = Iₖ and A ≈ QQᵀA
 * compute a smaller matrix B 
 
-B = QᵀA and B ∈ R^(k×n)
+B = QᵀA and B ∈ ℝ^(k×n)
 * Now compute SVD on B as B is a much smaller matrix it is easy to compute SVD on B 
 
     B = ŨΣVᵀ  where 
