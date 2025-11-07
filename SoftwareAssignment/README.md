@@ -46,9 +46,9 @@ B = QᵀA and B ∈ ℝ^(k×n)
 * Now compute SVD on B as B is a much smaller matrix it is easy to compute SVD on B 
 
     B = ŨΣVᵀ  where 
-  * Ũ are the orthonormal eigen vectors of BBᵀ , Ũ ∈ ℝ^(k×k)
-  *  V are orthonormal eigen vectors of BᵀB , V ∈ ℝ^(n×k) which are thew same as orthonormal eigen vectors of AᵀA
-  * Σ² are the eigen values of BᵀB which are same as the eigen values of AᵀA
+* Ũ are the orthonormal eigen vectors of BBᵀ , Ũ ∈ ℝ^(k×k)
+*  V are orthonormal eigen vectors of BᵀB , V ∈ ℝ^(n×k) which are thew same as orthonormal eigen vectors of AᵀA
+* Σ² are the eigen values of BᵀB which are same as the eigen values of AᵀA
   
 the right unit norm vectors V are same for B and U and Ũ are the eigen vectors of the matrix B now we need to find U
 * U = QŨ   where U  ∈ ℝ^(m×K) and U is the left unit norm vectors of A 
