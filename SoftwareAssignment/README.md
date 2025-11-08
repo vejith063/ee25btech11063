@@ -22,6 +22,8 @@ prototype:
 * Finally,we will obtain the reconstructed image which is formed by considering the top k singular values.
 * To run the code : gcc imagecompression.c -o imagecompression -lm    followed by   ./imagecompressiom
 
+*  The code prints the frobenious norm on the screen and saves the image in the same directory 
+
 
 
 
