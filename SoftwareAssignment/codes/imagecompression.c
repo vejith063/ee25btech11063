@@ -172,7 +172,7 @@ int width, height, channels;
   
   printf("matrix saved to reconstructed.txt\n");
   double f = frobeniusnorm(A, A_k, m, n);
-  printf("Error between A and A_%d is %lf\n",k,f);
+  printf("Frobenius norm  between A and A_%d is %lf\n",k,f);
   freematrix(A, m);
   freematrix(omega, n);
   freematrix(Q, m);
@@ -201,11 +201,23 @@ int width, height, channels;
 
     fclose(fp2);
 
-    FILE *out = fopen(output, "wb");
-    fprintf(out, "P5\n%d %d\n255\n", rwidth, rheight);
-    fwrite(rimg, 1, total, out);
-    printf("Image reconstructed successfully into %s",output);
-    fclose(out);
+    char *ext = strrchr(output, '.');
+    if (ext && strcmp(ext, ".png") == 0) {
+        if (stbi_write_png(output_file, rwidth, rheight, 1, rimg, rwidth))
+            printf(" Image saved as %s\n", output);
+        else
+            printf(" Failed to save the image.\n");
+    } 
+    else if (ext && strcmp(ext, ".jpg") == 0) {
+        if (stbi_write_jpg(output_file, rwidth, rheight, 1, rimg, 100))
+            printf(" Image saved as %s\n", output);
+        else
+            printf(" Failed to save the image.\n");
+    } 
+    else {
+        printf("Error: Unsupported file extension. \n");
+    }
+
     free(rimg);
     return 0;
 }

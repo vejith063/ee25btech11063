@@ -3,6 +3,8 @@
 #include<math.h>
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
 
 double **creatematrix(int m,int n){
  double **mat = (double **)malloc(m*sizeof(double *));
@@ -80,11 +82,11 @@ double **randommatrix(int m,int n){
 void Gram_schmidt(double **A,int m,int n){
   for (int j = 0; j < n; j++) {
         for (int k = 0; k < j; k++) {
-            double dot = 0;
+            double res = 0;
             for (int i = 0; i < m; i++)
-                dot += A[i][j] * A[i][k];
+                res += A[i][j] * A[i][k];
             for (int i = 0; i < m; i++)
-                A[i][j] -= dot * A[i][k];
+                A[i][j] -= res * A[i][k];
         }
         double norm = 0;
         for (int i = 0; i < m; i++)
@@ -95,6 +97,17 @@ void Gram_schmidt(double **A,int m,int n){
                 A[i][j] /= norm;
     }
 }
+
+double frobeniusnorm(double **A, double **B, int m, int n) {
+    double res = 0.0;
+    for (int i = 0; i < m; ++i)
+        for (int j = 0; j < n; ++j) {
+            double d = A[i][j] - B[i][j];
+            res += d * d;
+        }
+    return sqrt(res);
+}
+
 
 int main() {
 char file[256];
@@ -146,9 +159,8 @@ int width, height, channels;
         double norm = 0.0;
         for (int c = 0; c < k; c++) norm += B[r][c] * B[r][c];
         norm = sqrt(norm);
-        if (norm > 1e-12) {
-            for (int c = 0; c < k; c++) B[r][c] /= norm;
-        }
+       for (int c = 0; c < k; c++) B[r][c] /= norm;
+       
     }
 
     Y = B;
@@ -160,15 +172,17 @@ int width, height, channels;
   double **A_k = matmul(Q, c, m, k, n);
   writematrix("reconstructed.txt",A_k,m,n);
   
-  
+  printf("matrix saved to reconstructed.txt\n");
+  double f = frobeniusnorm(A, A_k, m, n);
+  printf("Frobenius norm  between A and A_%d is %lf\n",k,f);
   freematrix(A, m);
   freematrix(omega, n);
   freematrix(Q, m);
   freematrix(QT, k);
   freematrix(c, k);
-  freematrix(A_k, m);
+   freematrix(A_k, m);
+   
   
-  printf("matrix saved to reconstructed.txt\n");
   char output[256];
   printf("Enter the name of the reconstructed image :");
   scanf("%255s",output);
@@ -189,14 +203,23 @@ int width, height, channels;
 
     fclose(fp2);
 
-    FILE *out = fopen(output, "w");
-    fprintf(out, "P2\n%d %d\n255\n", rwidth, rheight);
-    for (int i = 0; i < total; i++) {
-        fprintf(out, "%d ", rimg[i]);
-        if ((i + 1) % rwidth == 0) fprintf(out, "\n");
+    char *ext = strrchr(output, '.');
+    if (ext && strcmp(ext, ".png") == 0) {
+        if (stbi_write_png(output, rwidth, rheight, 1, rimg, rwidth))
+            printf(" Image saved as %s\n", output);
+        else
+            printf(" Failed to save the image.\n");
+    } 
+    else if (ext && strcmp(ext, ".jpg") == 0) {
+        if (stbi_write_jpg(output, rwidth, rheight, 1, rimg, 100))
+            printf(" Image saved as %s\n", output);
+        else
+            printf(" Failed to save the image.\n");
+    } 
+    else {
+        printf("Error: Unsupported file extension. \n");
     }
-    printf("Image reconstructed successfully into %s",output);
-    fclose(out);
+
     free(rimg);
     return 0;
 }
