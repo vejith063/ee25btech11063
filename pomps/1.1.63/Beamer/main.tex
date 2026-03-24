@@ -91,4 +91,31 @@ Substituting,
 
 
 \end{frame}
+\begin{frame}{Python plot}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1.0\linewidth]{figs/02.png}
+        \label{fig:placeholder}
+    \end{figure}
+\end{frame}
+\begin{frame}[fragile]{Python: plot.py}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import matplotlib.pyplot as plt
+k = 10        
+m = 2         
+A = 1         
+k_eq = k / 2
+omega_n = np.sqrt(k_eq / m)
+t = np.linspace(0, 10, 1000)
+x = A * np.cos(omega_n * t)
+plt.figure()
+plt.plot(t, x)
+plt.xlabel('Time (s)')
+plt.ylabel('Displacement x(t)')
+plt.title('Free Vibration of Mass-Spring System')
+plt.grid()
+plt.show()
+\end{lstlisting}
+\end{frame}
 \end{document}
